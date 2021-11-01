@@ -5,14 +5,14 @@ function Banner(props) {
   const {t} = useTranslation();
 
   return (
-    <div className="Banner fadeInUp" style={{animationDelay: '0.4s'}}>
+    <div className="Banner fadeInDown" style={{animationDelay: '0.4s'}}>
       <div className="wrapper">
         <div className="alert-icon">
           <AlertIcon size={16} />
         </div>
         <div className="content">
           {t(
-            'After keeping you updated with Covid-19 information for the last 18 months, we will be stopping our operations on 31st October, 2021.'
+            'After 18 months of daily updates, we stopped our operations on 31st October, 2021. You can only view data from January 2020 to October 2021 on this website.'
           )}{' '}
         </div>
         <a
@@ -20,7 +20,7 @@ function Banner(props) {
           rel="noreferrer"
           target="_blank"
         >
-          {t('Read the full blog post')}
+          {t('Read more')}
           <div className="arrow-right-icon">
             <ArrowRightIcon size={16} />
           </div>
